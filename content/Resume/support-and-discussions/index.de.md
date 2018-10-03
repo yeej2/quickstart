@@ -1,12 +1,13 @@
 ---
-title: "Unterstützung und Diskussionen"
+title: "Resume"
 date: 2017-11-01T18:10:14+01:00
 
-tags: ['Discord', 'Support', 'Sag Danke!']
-author: "Lednerb"
-noSummary: true
+
+featured_image: ''
 ---
-Hallo zusammen!
+
+{{< figure src="/images/test.png" title="Joshua Yee" >}}
+
 
 Dieses Premium Theme ist unter einer Open Source Lizenz veröffentlicht worden, sodass du dieses für deinen Blog benutzen kannst.
 
