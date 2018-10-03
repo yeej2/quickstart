@@ -6,7 +6,7 @@ date: 2017-11-01T18:10:14+01:00
 featured_image: ''
 ---
 
-{{< figure src="/images/test.png" title="Joshua Yee" >}}
+{{< figure src="/images/peru.JPG" title="Joshua Yee" >}}
 
 Hey there!
 
