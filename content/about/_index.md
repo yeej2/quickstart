@@ -2,7 +2,7 @@
 title: "About"
 description: "Joshua Yee"
 
-featured_image: 'images/Peru.JPG'
+featured_image: {{< figure src ="/images/Peru.JPG"}}
 ---
 {{< figure src="/images/Profile picture.png" title="Joshua Yee" >}}
 
