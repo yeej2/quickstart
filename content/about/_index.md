@@ -3,6 +3,8 @@ title: "About"
 description: "Joshua Yee"
 
 featuredImage: "/images/Profile picture.png"
+body { background: url(./Peru.jpg) no-repeat top center; }
+
 ---
 {{< figure src="/images/Profile picture.png" title="Joshua Yee" >}}
 
