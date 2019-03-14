@@ -15,3 +15,11 @@ I worked on a team of five people in order to add a new feature that would
 obtain issues from the GitHub issue tracker. I implemented code to link the
 GatorGrader code to GitHub in order to retrieve issues. Then I worked with one of
 my colleagues to implement the retrieval of issues based on user specifications.
+I also touched on the implementation of testing for the issue tracker in order
+to obtain high code coverage, however, one of my colleagues did all of them
+overnight.
+
+## My Experience
+
+I had an amazing experience working on this project. I learned a lot from this
+software project and I had the 
