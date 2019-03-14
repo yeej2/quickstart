@@ -1,6 +1,5 @@
 ---
 title: "Work History"
-date: 2018-10-03T8:53
 featured_image: ''
 ---
 ## Ligonier Camp & Conference Center
