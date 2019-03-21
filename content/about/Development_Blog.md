@@ -6,7 +6,7 @@ featured_image: "background1.jpg"
 ---
 ## Overview
 
-{{< figure src="GatorGrader.png" >}}
+{{< figure src="/images/GatorGrader.png" title="GatorGrader Badges" >}}
 
 
 GatorGrader is a tool designed to be used with GitHub, GitHub Classroom, Travis CI,
