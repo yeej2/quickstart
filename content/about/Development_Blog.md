@@ -1,6 +1,6 @@
 ---
 title: "Developing GatorGrader "
-featured_image: 'GatorGrader.png'
+featured_image: "GatorGrader.png"
 ---
 ## Overview
 
