@@ -1,6 +1,6 @@
 ---
-title: "Joshua Yee"
-featured_image: "Peru.jpg"
+title: "Blog Posts"
+featured_image: "blogImage.JPG"
 featured_image_caption: "Caption Blah Blah"
 description: "A blog of different projects I've worked on."
 ---
