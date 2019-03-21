@@ -19,7 +19,6 @@ enableRobotsTXT = true
 [params]
   favicon = ""
   description = "The last theme you'll ever need. Maybe."
-  cover = "images/Peru.jpg"
   facebook = ""
   twitter = ""
   instagram = ""
