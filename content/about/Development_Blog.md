@@ -6,7 +6,7 @@ featured_image: "background1.jpg"
 ---
 ## Overview
 
-![GatorGrader](file//gatorgrader.png)
+![GatorGrader](/static/images/gatorgrader.png)
 
 GatorGrader is a tool designed to be used with GitHub, GitHub Classroom, Travis CI,
 and Gradle, another tool in GatorEducator. It is designed for automatic assessment
