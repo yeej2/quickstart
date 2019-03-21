@@ -4,10 +4,8 @@ date: 2018-10-03T8:53
 featured_image: ''
 ---
 
-<object data="http://joshuayee.netlify.com/resume.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://joshuayee.netlify.com/resume.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://joshuayee.netlify.com/the.pdf">Download PDF</a>.</p>
-    </embed>
+<object data="resume.pdf" type="application/x-pdf" title="SamplePdf" width="500" height="720">
+    <a href="resume.pdf">shree</a> 
 </object>
 
 1. [GitHub](https://github.com/yeej2)
