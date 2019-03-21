@@ -1,6 +1,6 @@
 ---
 title: "Blog Posts"
-featured_blog_image: "/static/images/blogimage.jpg"
+featured_image: "Peru.jpg"
 description: "A blog of different projects I've worked on."
 ---
 
