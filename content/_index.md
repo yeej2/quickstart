@@ -1,6 +1,6 @@
 ---
 title: "Joshua Yee"
-cover = "Peru.jpg"
+featured_image: "static/images/Peru.jpg"
 featured_image_caption: "Caption Blah Blah"
 description: "A summary and professional portfolio."
 ---
