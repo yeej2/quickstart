@@ -1,7 +1,7 @@
 ---
 title: "Developing GatorGrader "
 
-featured_image: "Peru.jpg"
+featured_dev_image: "devimage.jpg"
 
 ---
 ## Overview

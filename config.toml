@@ -30,4 +30,5 @@ enableRobotsTXT = true
   background_color_class = "bg-black"
   featured_image = "/static/images/Peru.jpg"
   featured_blog_image ="/static/images/blogimage.jpg"
+  featured_dev_image = "/static/images/devimage.jpg"
   recent_posts_number = 0
