@@ -4,11 +4,9 @@ title: "Developing GatorGrouper "
 featured_dev_image: "devimage.jpg"
 
 ---
-
-![GatorGrader](/images/gatorgrouper_logo.svg)
-
 ## Overview
 
+![GatorGrader](/images/gatorgrouper_logo.svg)
 
 GatorGrader is a tool designed to be used with GitHub, GitHub Classroom, Travis CI,
 and Gradle, another tool in GatorEducator. It is designed for automatic assessment
