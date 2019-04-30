@@ -14,7 +14,7 @@ Designed for use with GitHub, GitHub Classroom, and Travis CI, GatorGrouper is a
 
 ## What I did
 
-To begin this project I collaberated with others in order to form groups and organize tasks. I played a part in creating the requirements handled in the assessment of the project. Later I worked in a team with the task of testing and documentation. I created many test cases utilizing hypothesis which is a type of random parameterized testing. I researched graph theory in order to aid in the creation of a new algorithm to implement into the project, however I returned to creating test cases to obtain complete code coverage.
+To begin this project I collaborated with others in order to form groups and organize tasks. I played a part in creating the requirements handled in the assessment of the project. Later I worked in a team with the task of testing and documentation. I created many test cases utilizing hypothesis which is a type of random parameterized testing. I researched graph theory in order to aid in the creation of a new algorithm to implement into the project, however I returned to creating test cases to obtain complete code coverage.
 Below is an example of testing with hypothesis.
 
 ```
@@ -45,7 +45,7 @@ def test_hypothesis_rrobin_responses(numgrps):
     assert response_output[0][0][1] is True
     assert response_output[1][0][1] is True
     assert response_output[2][0][1] is True
-    
+
 ```
 
 This is creating a random number for the variable numgrps with values specified
