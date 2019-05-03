@@ -14,7 +14,7 @@ creation of tests to be much simpler as there is no need to alter
 the quizzes in the GUI tools. This system is created using Flask and
 Python along with the use of a SQLite3 database which manages the quizzes
 and results. A link to the project can be found
-[here](https://github.com/GatorEducator/quizagator)
+[here: Quizagator.](https://github.com/GatorEducator/quizagator)
 
 ## What I did.
 
@@ -25,62 +25,61 @@ a team leader for the Flask development team. I instructed and overlooked, and l
 the team in order to ensure a deployable product at the end of the working period.
 I also worked to create test cases to increase code coverage. I was also in charge
 of helping to review code so that it could be merged with minimal conflicts.
+Here is a snippet of some code that I wrote.
 
 ```
-@app.route("/teachers/quizzes/set/", methods=["POST"])
-@db.validate_teacher
-def set_quiz():
-    """ Displays a quiz using csv data """
-    question = query_db(
-        "SELECT questions.id, questions.type")
-    # creates each question, one at a time
-    item = []
-    while question[0][0] is not None:
+def db_init():
+    """Checks if database is already initialized, if not, create new one"""
+    database_path = app.config["DATABASE"]
+    if not os.path.exists(database_path):
+        conn = sqlite3.connect(database_path)
+        c = conn.cursor()
 
-# call respective method based on question type integer
+        # Create table - people
+        c.execute(
+            """CREATE TABLE people(
+            person_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            isTeacher INTEGER,
+            username TEXT,
+            password TEXT,
+            salt TEXT,
+            name TEXT,
+            email TEXT
+            )"""
+        )
 
-# OPEN ENDED
-        if question[0][1] = 0:
-            question_oe = query_db("SELECT question_text, FROM questions WHERE quiz_id=?",
-                                   [quiz_id])
-            item.append[]
-
-            # return flask.redirect("/teachers/questions/create/<quiz_id>/oe/")
-
-# MULTIPLE CHOICES
-        elif question[0][1] = 1:
-            questions_db = db.query_db(
-                "SELECT question_text, correct_answer, a_answer_text, b_answer_text, "
-                "c_answer_text, d_answer_text FROM questions WHERE quiz_id=?;",
-                [quiz_id],
-            )
-            quest_choice = {}
-            quest_choice["text"] = question[0]
-            quest_choice["correct"] = ["A", "B", "C", "D"][question[1]]
-            quest_choice["a"] = question[2]
-            quest_choice["b"] = question[3]
-            quest_choice["c"] = question[4]
-            quest_choice["d"] = question[5]
-            item.append(quest_choice)
-
-# RENDER TEMPLATE
-        return flask.render_template(
-            "/teachers/quiz_page.html",
-            items=items,
-            quiz_name=quiz_name[0][0],
-            quiz_id=quiz_id,
-
-
-        else:
-            flask.flash("There was an error with a question type. Please check for mistakes.")
-            return flask.redirect("/teachers/quizzes/")
-    return flask.redirect("/teachers/quizzes/")
+        conn.commit()
+        return conn
+        return sqlite3.connect(database_path)
 ```
 
-This code is responsible for appending the questions so that it can be displayed
-to either the students or the teacher. This is taking in a query to place into
-the database to fetch information about question name and id. After getting this
-it checks to see what type of question it is. This is done using a boolean value.
-If the id is 0 then it assumes it is an open ended question and appends the question
-with the appropriate logic. The same is true for when the id is 1. Then it runs
-logic for multiple choice questions displaying the name and choices for the problem.
+This code is shortened for simplicity purposes. It looks for a database and if
+there is no database then it initializes a new one. This creates a table and schema
+in the database.
+
+I also helped to create this:
+
+```
+for question_id in answers:
+    response = answers[question_id]
+    db.insert_db(
+        "INSERT INTO quiz_responses (student_id, quiz_id, question_id,"
+        " response) VALUES (?, ?, ?, ?)",
+        [flask.session["id"], quiz_id, question_id, response],
+    )
+```
+
+This is found in the `students.py` file. This inserts the student's responses into
+the database to be called later.
+
+For more insight into the project. Please use the link above.
+
+## My Experience
+
+I had a lot of fun with this project. The team pulled through and we made the
+deadline. There were many learning opportunities and we all pitched in as much
+as we were able. I enjoyed acting as a leader for the team, and helping people
+learn more as we went along. Helping others on top of doing my own work proved
+to be difficult, however it was very rewarding and helped me to improve my own
+understanding of Flask, Python, and HTML. I hope to work on another project
+soon!
